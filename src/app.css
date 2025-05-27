@@ -1,3 +1,15 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+   --font-league: "LeagueMono", "monospace";
+}
+
+@font-face {
+   font-family: LeagueMono;
+   font-style: normal;
+   font-weight: 200 700;
+   font-display: swap;
+   src: url("../static/fonts/LeagueMono.woff2") format("woff2");
+}
