@@ -8,7 +8,8 @@ const callingCode = localFont({
 
 export const metadata: Metadata = {
   title: "Tokitoki",
-  description: "A minimalist chat app with translation.",
+  description:
+    "A minimalist chat app where language ain't a hinderence in communication.",
 };
 
 export default function RootLayout({
