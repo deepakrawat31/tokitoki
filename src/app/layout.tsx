@@ -2,8 +2,14 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const callingCode = localFont({
-  src: "../fonts/CallingCode.woff2",
+const breado = localFont({
+  src: "../fonts/Breado-Sans.woff2",
+  variable: "--font-breado",
+});
+
+const breadoScript = localFont({
+  src: "../fonts/Breado-Script.woff2",
+  variable: "--font-breado-script",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${callingCode.className} bg-neutral-900 leading-tight text-neutral-200 antialiased`}
+        className={`${breado.variable} ${breadoScript.variable} font-breado bg-neutral-900 leading-normal text-neutral-200 antialiased`}
       >
         {children}
       </body>

@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme inline {
+   --font-breado-script: var(--font-breado-script);
+   --font-breado: var(--font-breado);
+}
